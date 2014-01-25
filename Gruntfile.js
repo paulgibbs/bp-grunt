@@ -207,6 +207,8 @@ module.exports = function( grunt ) {
 	grunt.registerTask( 'build', [ 'clean:all', 'copy:all', 'cssjanus:core', 'cssmin:ltr', 'cssmin:rtl', 'uglify:core', 'clean:build', 'jsvalidate:build' ] );
 	grunt.registerTask( 'build-release', [ 'clean:all', 'copy:all', 'cssjanus:core', 'cssmin:ltr', 'cssmin:rtl', 'uglify:core', 'clean:build', 'jsvalidate:build', 'phpunit:all' ] );
 
+// TODO: add a something to handle doing an `svn export` and putting old bbPress into place.
+
 	// Testing tasks.
 	grunt.registerMultiTask( 'phpunit', 'Runs PHPUnit tests, including the ajax and multisite tests.', function() {
 		grunt.util.spawn( {
@@ -220,6 +222,7 @@ module.exports = function( grunt ) {
 
 	// Default task.
 	grunt.registerTask( 'default', [ 'build' ] );
+
 
 	// Add a listener to the watch task.
 	//
