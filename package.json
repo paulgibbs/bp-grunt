@@ -1,40 +1,36 @@
 {
-  "author": "Paul Gibbs <paul@byotos.com>",
-  "bugs": {
-    "url": "https://github.com/paulgibbs/achievements/issues"
-  },
-  "description": "Achievements gamifies your WordPress site with challenges, badges, and points.",
+  "author": "The BuddyPress Community",
+  "bugs": { "url": "https://buddypress.trac.wordpress.org/" },
+  "description": "Social networking in a box. Build a social network for your company, school, sports team, or niche community.",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-less": "~0.7.0",
     "grunt-contrib-cssmin": "~0.6.1",
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-contrib-watch": "~0.5.1",
     "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.7.0",
     "grunt-cssjanus": "~0.1.1",
     "grunt-phpunit": "~0.3.0",
-    "matchdep": "~0.1.2",
-    "grunt-rsync": "~0.2.1"
+    "grunt-jsvalidate": "~0.2.2",
+    "matchdep": "~0.1.2"
   },
+  "homepage": "https://buddypress.org",
   "keywords": [
-    "achievements",
-    "badges",
-    "challenges",
-    "gaming",
-    "points",
-    "rewards"
+    "WordPress",
+    "social",
+    "network",
+    "plugin"
   ],
-  "homepage": "http://achievementsapp.com",
   "licenses": {
-    "type": "GPLv3",
-    "url": "https://github.com/paulgibbs/achievements/blob/master/license.txt"
+    "type": "GPLv2 or later",
+    "url": "https://buddypress.trac.wordpress.org/browser/trunk/license.txt"
   },
-  "name": "achievements-for-wordpress",
+  "name": "buddypress",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/paulgibbs/achievements.git"
+    "type": "svn",
+    "url": "https://buddypress.svn.wordpress.org/trunk"
   },
-  "version": "3.5.1"
+  "version": "2.0"
 }
