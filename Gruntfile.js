@@ -1,8 +1,8 @@
 /* jshint node:true */
 module.exports = function( grunt ) {
-	var path = require('path'),
+	var path = require( 'path' ),
 	SOURCE_DIR = 'src/',
-	BUILD_DIR      = 'build/',
+	BUILD_DIR  = 'build/',
 
 	// RTL from cssjanus
 	BP_RTL_CSS = [
@@ -41,7 +41,7 @@ module.exports = function( grunt ) {
 	// Project configuration.
 	grunt.initConfig({
 		clean: {
-			all: [BUILD_DIR],
+			all: [ BUILD_DIR ],
 			dynamic: {
 				cwd: BUILD_DIR,
 				dot: true,
