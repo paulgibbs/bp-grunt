@@ -199,15 +199,26 @@ module.exports = function( grunt ) {
 					spawn: false
 				}
 			}
+		},
+
+		exec: {
+			bbpress: {
+				command: 'svn export https://bbpress.svn.wordpress.org/tags/1.2 bbpress',
+				cwd: BUILD_DIR + 'bp-forums',
+				stdout: false
+			},
+			bpdefault: {
+				command: 'mkdir bp-themes && cp -R ../tools/bp-default bp-themes/',
+				cwd: BUILD_DIR,
+				stdout: false
+			}
 		}
 	});
 
 
 	// Build tasks.
-	grunt.registerTask( 'build', [ 'clean:all', 'copy:files', 'cssjanus:core', 'cssmin:ltr', 'cssmin:rtl', 'uglify:core', 'jsvalidate:build' ] );
-	grunt.registerTask( 'build-release', [ 'clean:all', 'copy:files', 'cssjanus:core', 'cssmin:ltr', 'cssmin:rtl', 'uglify:core', 'jsvalidate:build', 'phpunit:all' ] );
-
-// TODO: add a something to handle doing an `svn export` and putting old bbPress into place.
+	grunt.registerTask( 'build',         [ 'clean:all', 'copy:files', 'cssjanus:core', 'cssmin:ltr', 'cssmin:rtl', 'uglify:core', 'jsvalidate:build' ] );
+	grunt.registerTask( 'build-release', [ 'clean:all', 'copy:files', 'cssjanus:core', 'cssmin:ltr', 'cssmin:rtl', 'uglify:core', 'jsvalidate:build', 'exec:bpdefault', 'exec:bbpress', 'phpunit:all' ] );
 
 	// Testing tasks.
 	grunt.registerMultiTask( 'phpunit', 'Runs PHPUnit tests, including the ajax and multisite tests.', function() {

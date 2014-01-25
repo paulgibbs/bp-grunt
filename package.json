@@ -13,7 +13,8 @@
     "grunt-cssjanus": "~0.1.1",
     "grunt-phpunit": "~0.3.0",
     "grunt-jsvalidate": "~0.2.2",
-    "matchdep": "~0.1.2"
+    "matchdep": "~0.1.2",
+    "grunt-exec": "~0.4.3"
   },
   "homepage": "https://buddypress.org",
   "keywords": [
