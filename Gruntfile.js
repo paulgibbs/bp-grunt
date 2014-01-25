@@ -204,8 +204,8 @@ module.exports = function( grunt ) {
 
 
 	// Build tasks.
-	grunt.registerTask( 'build', [ 'clean:all', 'copy:all', 'cssjanus:core', 'cssmin:ltr', 'cssmin:rtl', 'uglify:core', 'clean:build', 'jsvalidate:build' ] );
-	grunt.registerTask( 'build-release', [ 'clean:all', 'copy:all', 'cssjanus:core', 'cssmin:ltr', 'cssmin:rtl', 'uglify:core', 'clean:build', 'jsvalidate:build', 'phpunit:all' ] );
+	grunt.registerTask( 'build', [ 'clean:all', 'copy:files', 'cssjanus:core', 'cssmin:ltr', 'cssmin:rtl', 'uglify:core', 'clean:build', 'jsvalidate:build' ] );
+	grunt.registerTask( 'build-release', [ 'clean:all', 'copy:files', 'cssjanus:core', 'cssmin:ltr', 'cssmin:rtl', 'uglify:core', 'clean:build', 'jsvalidate:build', 'phpunit:all' ] );
 
 // TODO: add a something to handle doing an `svn export` and putting old bbPress into place.
 
