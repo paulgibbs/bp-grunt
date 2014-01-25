@@ -1,0 +1,1 @@
+BuddyPress unit tests would be moved here.

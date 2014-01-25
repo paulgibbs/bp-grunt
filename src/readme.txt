@@ -1,0 +1,1 @@
+BuddyPress plugin would go here, minus tests folder and PHPUnit & Travis config files, etc.
