@@ -2,6 +2,7 @@
   "author": "The BuddyPress Community",
   "bugs": { "url": "https://buddypress.trac.wordpress.org/" },
   "description": "Social networking in a box. Build a social network for your company, school, sports team, or niche community.",
+  "dependencies": { "WordPress": ">=3.6.0" },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
@@ -23,14 +24,11 @@
     "network",
     "plugin"
   ],
-  "licenses": {
-    "type": "GPLv2 or later",
-    "url": "https://buddypress.trac.wordpress.org/browser/trunk/license.txt"
-  },
+  "license": "GPL-2.0+",
   "name": "buddypress",
   "repository": {
     "type": "svn",
     "url": "https://buddypress.svn.wordpress.org/trunk"
   },
-  "version": "2.0"
+  "version": "2.0.0"
 }
